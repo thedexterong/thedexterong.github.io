@@ -8,7 +8,7 @@
         text-align:center;
         }
         
-      div.container {
+      div.invis-box {
         display: flex;
         align-items: center;
         justify-content: center
@@ -16,12 +16,12 @@
       img {
         max-width: 100%
         }
-      div.image {
+      div.my-image {
         flex-basis: 40%;
         margin: 30px;
         border: black;
         }
-      div.text {
+      div.bio-text {
         font-size: 20px;
         padding-left: 20px;
         padding-right: 20px;
@@ -29,8 +29,9 @@
         border-radius: 5px;
         margin: 30px;
         }
-      iframe {
-        margin: auto;
+      div.yt-box {
+        text-align: center;
+        width: 50%;
         }
   </style>
 </head>
@@ -38,19 +39,21 @@
 <h1>Hello world, I am Dexter :^)</h1>
 
 <body>
-  <div class="container">
-      <div class="image">
+  <div class="invis-box">
+      <div class="my-image">
         <img src="IMG_20220718_140901.jpg" alt="My holiday in Perth">
       </div>
-      <div class="text">
+      <div class="bio-text">
         <p>That's me on the left! <br><br>
             I enjoy playing video games of all genres, ranging from first person shooters like Apex Legends, to role playing games like Monster Hunter. <br><br>
             Like most Singaporeans, I enjoy travelling, and on my 18th birthday I was fortunate enough to visit Tateyama, Japan, at the Kurobe Alpine Route and see these majestic snow walls.</p>
       </div>
     </div>
-  
-  <iframe width="420" height="315"
-  src="https://www.youtube.com/embed/9hy9cI87uSw?autoplay=1&mute=1">
-  </iframe>
+    
+    <div class="yt-box">
+      <iframe width="420" height="315"
+      src="https://www.youtube.com/embed/9hy9cI87uSw?autoplay=1&mute=1">
+      </iframe>
+    </div>
   
 </body>
