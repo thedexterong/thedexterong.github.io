@@ -6,97 +6,180 @@
   <!-- Bootstrap nonsense -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Github Webpage</title>
+  <title>Dexter's Github Webpage</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   
   <style>
     head, body {
-      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: whitesmoke;
+      font-family:'Titillium Web';
+      background-color: #f5f5f5;
       }    
+
+    nav {
+      background-color: #6cd9d9;
+    }
+
+    #main-container {
+      margin-right:10%;
+      margin-left:10%;
+      margin-top:5%;
+      margin-bottom:5%;
+      border: 2px solid black;
+      border-radius: 5px;
+      padding:20px;
+    }
+
+    #carouselTravel {
+
+      width:100%;
+      max-width:1200px;
+      margin:auto;
+      margin-top: 20px;
+      clip-path: circle();
+    }
+
+    .carousel-caption {
+      background-color: #f5f5f5;
+      opacity: 90%;
+      color:black;
+      position:absolute;
+      bottom:0;
+    }
   </style>
 </head>
 
 <body>
+  <a id="top"></a>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg" style="background-color:rgb(0, 163, 155)">
+  <nav class="navbar sticky-top">
     <div class="container-fluid">
-      <a class="navbar-brand">Dexter's page</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact Me</a>
-          </li>
-        </ul>
+      <a class="navbar-brand mb-0 h1" href="#top">Dexter's Github Page</a>
+      <div class="justify-content-end">
+        <a class="navbar-brand" href="#introduction">Introduction</a>
+        <a class="navbar-brand" href="#ivory-keys">SMU Ivory Keys</a>
+        <a class="navbar-brand" href="#hobbies">Hobbies</a>
       </div>
     </div>
   </nav>
 
   <!-- Carousel -->
-  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
+  <div id="carouselTravel" class="carousel slide carousel-fade" data-bs-ride="carousel">
     <div class="carousel-inner">
-      <div class="carousel-item active">
+      <div class="carousel-item active" data-bs-interval="5000">
         <img src="images/australia.jpg" class="d-block w-100" alt="australia">
-        <div class="carousel-caption d-none d-md-block">
+        <div class="carousel-caption">
           <h5>Perth, Australia</h5>
           <p>I pose at the Matagarup bridge.</p>
         </div>
       </div>
-      <div class="carousel-item">
+      <div class="carousel-item" data-bs-interval="5000">
         <img src="images/great_wall.jpg" class="d-block w-100" alt="greatwall">
-        <div class="carousel-caption d-none d-md-block">
+        <div class="carousel-caption">
           <h5>Great Wall of China, China</h5>
-          <p>Here you can see me scaling the Great Wall. It was a tiring trek.</p>
+          <p>Here you can see me scaling the Great Wall.<br>It was a tiring trek.</p>
         </div>
       </div>
-      <div class="carousel-item">
+      <div class="carousel-item" data-bs-interval="5000">
         <img src="images/who_was_in_paris.png" class="d-block w-100" alt="paris">
-        <div class="carousel-caption d-none d-md-block">
+        <div class="carousel-caption">
           <h5>Eiffel Tower, Paris</h5>
           <p>I managed to find out who was in Paris.</p>
         </div>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselTravel" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselTravel" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
   </div>
 
-  <!-- Header at the top -->
-  <h1 class="display-1 py-3 text-center">Hello world, I am Dexter :^)</h1>
+  <h1 class="display-1 py-3 text-center" style="margin-top:4%;">Hi! I'm Dexter.</h1>
 
-
-  <!-- Biography -->
-  <div class="container pb-5">
-    <p>That's me above!<br><br>
-      I enjoy playing video games of all genres, ranging from first person shooters like Apex Legends, to role playing games like Monster Hunter. <br><br>
-      Like most Singaporeans, I enjoy travelling, and on my 18th birthday I was fortunate enough to visit the Kurobe Alpine Route at Tateyama, Japan, and see these majestic snow walls (seen below!)</p>
-  </div>
-  
-  <!-- Youtube Video  -->
+  <!-- Introduction -->
+  <div id="main-container">
+    <div id="introduction" style="scroll-margin-top: 80px;">
+      <h1>Introduction</h1>
+      <p>That's me above!</p>
+      <p>I'm a Y2 Information Systems student from Singapore Management University. Apart from being a simple student, I also play the piano and engross myself in video games, computer building, and mechanical keyboard... shopping?</p>
+      <p>I also enjoy travelling, and on my 18th birthday I was able to visit the Kurobe Alpine Route at Tateyama, Japan and see these majestic snow walls.</p>
+    </div>
+    <!-- Youtube Video  -->
     <div class="iframe-container" style="position: relative; width: 100%; padding-bottom: 56.25%; height:0;">
-      <iframe style="position: absolute; top: 0; left: 0; width: 90%; height: 100%; margin-left: 5%; margin-right:5%; padding-bottom: 50px" width="560" height="315" src="https://www.youtube.com/embed/9hy9cI87uSw?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe style="position: absolute; top: 0; left: 0; width: 90%; height: 100%; margin-left: 5%; margin-right:5%; padding-bottom: 20px" width="560" height="315" src="https://www.youtube.com/embed/9hy9cI87uSw?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- SMU IK -->
+  <div id="main-container">
+    <div id="ivory-keys" style="scroll-margin-top: 80px;">
+      <h1>SMU Ivory Keys</h1>
+      <p>For AY2021-2022, I was the SMU Ivory Keys Marketing Director and assisted the Executive Committee as well as the club as a whole in trainings, recordings, and video editing.</p>
+      <p>I will be running for Marketing Director again for the upcoming academic year, and I hope to be able to continue to watch and contribute to the growth of my club.</p>
+    </div>
+    <div class='sk-ww-youtube-channel-videos' data-embed-id='94947'></div>
+    <script src='https://widgets.sociablekit.com/youtube-channel-videos/widget.js' async defer></script>
+  </div>
+
+  <!-- Hobbies -->
+  <div id="main-container">
+    <div id="hobbies" style="scroll-margin-top: 80px;">
+      <h1>Hobbies</h1>
+      <p>In my spare time, I like to play video games and enjoy taking screenshots of the mystical areas I visit virtually. Here are a few of them!</p>
     </div>
 
+    <div class="row row-cols-1 row-cols-md-2 g-4">
 
+      <div class="col">
+        <!-- Top left -->
+        <div class="card text-bg-dark my-4">
+          <img id="topleftimg" src="https://steamuserimages-a.akamaihd.net/ugc/1931500395744798862/18D456344A7E35FA62F48E8FE817F87B9B925103/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false" class="card-img">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Monster Hunter Rise: Sunbreak</h5>
+            <p class="card-text">The view from Elgado Outpost.</p>
+          </div>
+        </div>
+        <!-- Bottom left -->
+        <div class="card text-bg-dark my-4">
+          <img id="botleftimg" src="https://steamuserimages-a.akamaihd.net/ugc/1863933534045596438/10E0A3A5060835C6B2D15D3A0B6813ADBA9D9B56/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false" class="card-img">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Elden Ring</h5>
+            <p class="card-text">The scorched earth of Leyndell, Royal Capital.</p>
+          </div>
+        </div>
 
+      </div>
+  
+      <div class="col">
+        <!-- Top right -->
+        <div class="card text-bg-dark my-4">
+          <img id="toprightimg" src="https://steamuserimages-a.akamaihd.net/ugc/1807656294207416545/D6BB84D335CBA249A7C20279A10581D6CC8BC9BA/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false" class="card-img">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Elite: Dangerous</h5>
+            <p class="card-text">The inside of an Orbis Starport, featuring a Federal Corvette.</p>
+          </div>
+        </div>
+        <!-- Bottom right -->
+        <div class="card text-bg-dark my-4">
+          <img id="botrightimg" src="https://steamuserimages-a.akamaihd.net/ugc/1931500395735234960/04F8FA343A975AD382CFFA593F41E85B9E679A10/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false" class="card-img">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Monster Hunter Rise: Sunbreak</h5>
+            <p class="card-text">The Citadel locale under the curse of Qurios.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Javascript scripts -->
+  <script>
+
+  </script>
   
   <!-- Bootstrap CSS & JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
